@@ -1,0 +1,31 @@
+.Background {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 15px;
+    left: 15px;
+    font-size: 1em;
+    color: #fcfcfc;
+    opacity: 0.5;
+    transition: all 0.2s;
+    -webkit-backface-visibility: hidden;
+}
+
+.Background .name {
+    display: inline-block;
+    margin: 0 3px;
+    background: #2980b9;
+    padding: 2px 7px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s;
+}
+
+.Background:hover {
+    opacity: 1;
+}
+
+.Background:hover .name {
+    transform: scaleX(1);
+}
